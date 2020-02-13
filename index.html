@@ -70,7 +70,7 @@
 
     // id maior ou igual a 10 e id menor ou igual a 20 ou idade igual a 1
     if (id >=18 && id <= 20 || age ===1){
-        console.log("id entre 18 e 20");
+        console.log("idade entre 18 e 20");
     }
 
     //
@@ -106,6 +106,8 @@
             rua : "rua dos afogados",
             numero : "123",
             referencias : ["Perto do aquario","ao lado da loja de artigos marinhos"]
+        }, display : function(){
+            console.log("Oi");
         }
     };
     
@@ -121,7 +123,84 @@
     
     console.log(nome+ "\n"+ rua);
     console.log(person.endere.referencias[1]);
-    console.log(person["endere"].referencias[1]);
+
+    
+
+    //funções vazias
+    function printMessage(){
+        console.log("Mensagem!");
+    }
+    printMessage();
+    //funcoes que retornam valor
+    function calculate(n1,n2){
+        return n1 * n2;
+    }    
+    console.log(calculate(12,6));
+    
+    //funçoes como variaveis
+    var printMessage2 = function(message){
+        console.log("Texto : "+ message);
+    };
+
+    var calculate2 = function(n1,n2){
+        printMessage2("Oi,bão?");
+        return n1/n2;
+    };
+
+    console.log(calculate2(5,10));
+    var print = function(value, printFunction,user){
+       
+        printFunction(value);
+        console.log(user);
+        user.display();
+    }
+
+    print("Equimax",printMessage2,person);
+    
+
+    //laços de repetição
+
+    /*
+    count++ // count= count +1;
+    count+=3 // count=count +3;
+    count-- // count = count -1;
+
+    
+    */
+    var array = [1,2,3,47,90,-1];
+    var count = 0;
+    console.log("While");
+    while(count <=2){
+        console.log(count);
+        count++;
+    }
+    console.log("For");
+    for (var i = 0;i < 4;i++){
+        console.log("i = "+i);
+    }
+    var count2 = 0;
+
+    console.log("do...while");
+    //executa pelo menos uma vez se a condição de parada for false
+    do{
+        console.log("count2 = " + count2)
+        count2++;
+    }while(count2 <=2);
+
+   console.log("for decrescente");
+   for (var i = 50; i>=20; i-=5){
+        console.log("i = "+ i);
+    }
+    //variavel ++ ->primeiro usa o valor da variavel e só depois acrescenta
+    var linha = 1;
+    console.log("Linha = ", i++);
+    console.log("Linha após = ",i);
+
+    // ++variavel faz o acrescimo depois usa a variavel
+    var coluna = 1;
+    console.log("Coluna = ", ++coluna);
+    console.log("Coluna após = ", coluna);
+
     </script>    
     </body>
 </html>
