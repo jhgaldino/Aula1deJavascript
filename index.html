@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+
+    </head>
+    <body>
+
+
+
+    <script>
+    // declaracao de variaveis    
+    var numero = 5;
+    var floatnumber = 6.9;
+    var name = "Joao";
+    var canShow = false;
+
+    //arrays - vetores
+    var array = [1,2,3,4,5];
+    var array2 = ["a","b","c"];
+    var array3 = [1,"b",5.6,false];
+
+    //matrizes
+    var mat = [
+        [1, 2],
+        [3, 4],
+        [5, 6]
+    ];
+
+    console.log("olá mundo");
+    console.log(numero,floatnumber,name, canShow);
+    console.log(array);
+    console.log(array2);
+    console.log(array3);
+
+    console.log(mat);
+        //tamanho de arrays
+    console.log(array3.length);
+    console.log(mat[0].length);
+
+    //operacoes matematicas
+    var n1 = 5;
+    var n2 = 6;
+    var r1 = n1 + n2;
+    var r2 = n1 - n2;
+    var r3 = n1 * n2;
+    var r4 = n1 / n2;
+    var resultado = "10"+5;
+
+    console.log(r1,r2,r3,r4);
+    console.log(resultado);
+
+    // condições
+    var age = 15;
+    if (age == 15){
+        console.log("Muito Jovem!");
+    }
+
+    var id = "18";
+    //com tres iguais verifica se a tipagem e igual e se os valores sao iguais
+    if(id === 18){
+        console.log("ja pode ser preso");
+
+    }
+
+    //com  !==verifica se a tipagem e diferente e se os valores sao difierentes
+    if(id !== 10){
+        console.log("diferente de 10");
+    }
+
+    // id maior ou igual a 10 e id menor ou igual a 20 ou idade igual a 1
+    if (id >=18 && id <= 20 || age ===1){
+        console.log("id entre 18 e 20");
+    }
+
+    //
+    var myvar =false;
+    var potato; //undefined
+    var var2 = null;
+    var var3 = false;
+    var pudim = 0;
+    console.log(potato);
+    console.log(var2);
+    if (pudim && potato){
+        console.log("Verdade");
+    }else if(!var3){
+        console.log("Falso");
+    }else{
+        console.log("Outro caso");
+    }
+    //
+    var nome = "João";
+    var text = (name === "João")? "João e Maria": "Não tem João";
+    console.log(text);
+
+    var n1 = 5;
+    var result = n1>=10 ? 10 : 0;
+    console.log(result);
+
+
+
+    
+    </script>    
+    </body>
+</html>
