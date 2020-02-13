@@ -97,9 +97,31 @@
     var result = n1>=10 ? 10 : 0;
     console.log(result);
 
-
-
+    //objeto
+    var person = {
+        nome:"maria",
+        sexo:"feminino",
+        idade : 20,
+        endere:{
+            rua : "rua dos afogados",
+            numero : "123",
+            referencias : ["Perto do aquario","ao lado da loja de artigos marinhos"]
+        }
+    };
     
+    person.nome = "Maria da Silva";
+
+    console.log(person.idade);
+    console.log(person.endere.rua);
+    console.log(person);
+
+    var nome = person["nome"]; //person.name
+    var propriedade = "endere";
+    var rua = person[propriedade]["rua"];
+    
+    console.log(nome+ "\n"+ rua);
+    console.log(person.endere.referencias[1]);
+    console.log(person["endere"].referencias[1]);
     </script>    
     </body>
 </html>
